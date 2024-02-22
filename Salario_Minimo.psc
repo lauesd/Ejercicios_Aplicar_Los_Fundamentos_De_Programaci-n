@@ -11,7 +11,7 @@ Algoritmo Salario_Minimo
 	Escribir "¿Cual es la cédula de ciudadania de la persona?: ";
 	Leer Cedula_Empleado;
 	Escribir "¿Cúal es el nombre completo de la persona?: ";
-    Leer Nombre_Empleado;
+	Leer Nombre_Empleado;
 	Escribir "¿Cúal es el salario básico de esa persona?";
 	Leer Salario_Basico;
 	Escribir "¿Cúales son los días laborados de esa persona?";
@@ -39,6 +39,4 @@ Algoritmo Salario_Minimo
 	Total_Deducciones <- 100000;
 	
 	Escribir "El salario neto a recibir es de: ", Total_Devengado - Total_Deducciones;
-	
-	
 FinAlgoritmo
