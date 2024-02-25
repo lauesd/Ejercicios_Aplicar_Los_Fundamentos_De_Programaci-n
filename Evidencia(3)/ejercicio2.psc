@@ -1,4 +1,4 @@
-Proceso calcularDatosFiesta
+Proceso ejercicio2	
 	
 	Definir contador_personas Como Entero;
 	Definir contador_hombres Como Entero;
@@ -36,7 +36,7 @@ Proceso calcularDatosFiesta
 			persona_mas_joven <- edad;
 		FinSi
 		
-		Escribir "digite su sexo masculino femenino: ";
+		Escribir "digite su sexo masculino o femenino: ";
 		Leer sexo;
 		Si sexo = 'masculino' Entonces
 			contador_hombres <- contador_hombres + 1;

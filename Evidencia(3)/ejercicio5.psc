@@ -1,4 +1,4 @@
-Proceso ConvertorEurosADolares
+Proceso ejercicio5
 	Definir euro Como Entero;
 	Definir dolar Como Real;
 	

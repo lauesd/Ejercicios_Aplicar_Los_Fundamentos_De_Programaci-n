@@ -1,4 +1,4 @@
-Proceso Lectura
+Proceso ejercicio6
 	
 	Definir radio Como Entero;
 	Definir area Como Real;

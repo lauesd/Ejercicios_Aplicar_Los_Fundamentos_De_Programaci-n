@@ -1,4 +1,4 @@
-Proceso calificacionObtenida
+Proceso ejercicio4
 	Definir EstudianteContador Como Entero;
 	Definir EstudianteContadormenor49 Como Entero;
 	Definir EstudianteContador50 Como Entero;

@@ -1,4 +1,4 @@
-Algoritmo  CostoLlamada
+Algoritmo  ejercicio3
 	Definir duracion_De_llamada Como Entero;
 	Definir minutos_adicionales Como Entero;
 	Definir valor_De_llamada Como Entero;
