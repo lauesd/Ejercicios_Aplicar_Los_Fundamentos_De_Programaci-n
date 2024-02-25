@@ -1,4 +1,4 @@
-Algoritmo Salario_Minimo
+Algoritmo Salario_Neto2
 	Definir Cedula_Empleado Como Entero;
 	Definir Nombre_Empleado Como Caracter;
 	Definir Salario_Basico Como Real;
@@ -24,19 +24,29 @@ Algoritmo Salario_Minimo
 	Escribir "El salario básico de la persona es: ", Salario_Basico;
 	
 	Definir Sueldo_Devengado Como Real;
-	Sueldo_Devengado  <- Salario_Basico * Dias_Laborados / 30;
-	
-	Escribir "El auxilio de transporte de la persona es: ", 162000 * Dias_Laborados / 30;
+	Sueldo_Devengado  <- Salario_Basico * Dias_Laborados / 30;	
+
+	Si Salario_Basico <= 2000000 Entonces
+		Escribir "El auxilio de transporte de la persona es: ", 162000 * Dias_Laborados / 30;
+	SiNo
+		Escribir "La persona no tiene derecho a un auxilio de transporte.";
+	FinSi
+		
 	
 	Definir Comision_Ventas Como Real;
-	Comision_Ventas <- Ventas_Del_Mes * 0.02;
+	Comision_Ventas <- Ventas_Del_Mes * 0.02; 
 	
-	Escribir "La comisión de ventas de la persona es: ",  Comision_Ventas;
-	
+	Si Ventas_Del_Mes = 0 Entonces
+		Escribir "La persona no tuvo ninguna venta";
+	SiNo
+		Escribir "La comisión de ventas de la persona es: ",  Comision_Ventas;
+	FinSi
+
 	Definir Total_Devengado Como Real;
 	Total_Devengado <- Sueldo_Devengado + Comision_Ventas; 
-	Definir Total_Deducciones Como Real;
-	Total_Deducciones <- 100000;
+	Definir Total_Deducciones Como Real; 
+	Total_Deducciones <- 100000; 
 	
+	Escribir "Prestamos: ", Total_Deducciones;
 	Escribir "El salario neto a recibir es de: ", Total_Devengado - Total_Deducciones;
 FinAlgoritmo
